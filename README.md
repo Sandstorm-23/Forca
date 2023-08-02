@@ -1,2 +1,2 @@
 # Forca
- Primeiro repositorio
+Repositorio do Jogo da forca
