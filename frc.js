@@ -1,6 +1,6 @@
 
 
-
+const header = document.querySelector('#header');
 
 
 let p1 = ['c','a','p','i','v','a','r','a']
@@ -19,7 +19,7 @@ let tx3 = document.querySelector('#d4')
 let v = []
 let x = []
 let ps = []
-let hp = 5
+let hp = ['|','|','|','|','|']
 let pu = ""
 
 function easy(){
@@ -125,14 +125,11 @@ tx1.innerHTML = (x.join(" "))
 tx2.innerHTML = (`letras usadas: ${ps}`)
 
 }
-} else if (ss1.length > 1) {
-
-    alert('Digite uma unica letra')
-
 } else {
 
     tx2.innerHTML = (`letras usadas: ${ps}`)
-    hp = hp-1
+    hp.pop()
+
 }
 
 if (hp == 0) {
@@ -145,9 +142,9 @@ location.reload(true)
 
 
 }else {
-tx3.innerHTML = (`vidas ${hp}`)
 
-ducument.querySelector('#i1').value = ""
+tx2.innerHTML = (hp.join(""))
+document.getElementById('i1').value = "";
 }
 
 
