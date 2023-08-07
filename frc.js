@@ -3,11 +3,13 @@
 const header = document.querySelector('#header');
 
 
+
+
+
 let p1 = ['c','a','p','i','v','a','r','a']
 let p2 = ['c','a','v','a','l','o']
 let p3 = ['r','a','m','o','m']
 let p4 = ['p','i','c','o','l','e']
-
 
 
 
@@ -16,10 +18,11 @@ let tx2 = document.querySelector('#d3')
 let tx3 = document.querySelector('#d4')
 
 
+
 let v = []
 let x = []
 let ps = []
-let hp = ['|','|','|','|','|']
+let hp = 5 
 let pu = ""
 
 function easy(){
@@ -123,12 +126,28 @@ pu[rs] = 0
 x[rs] = rs2 
 tx1.innerHTML = (x.join(" "))
 tx2.innerHTML = (`letras usadas: ${ps}`)
+s1.value = ""
 
 }
 } else {
+  s1.value = ""
+  tx2.innerHTML = (`letras usadas: ${ps}`)
 
-    tx2.innerHTML = (`letras usadas: ${ps}`)
-    hp.pop()
+    hp = hp - 1
+   
+    document.querySelector("#vid5").src="vidaboll.png";
+    if (hp == 3){ 
+      document.querySelector("#vid4").src="vidaboll.png"
+    
+    }else if (hp == 2) {
+      document.querySelector("#vid3").src="vidaboll.png"
+    } else if (hp == 1) {
+      document.querySelector("#vid2").src="vidaboll.png"
+    }else if (hp == 0)  {
+      document.querySelector("#vid1").src="vidaboll.png"
+    }
+    
+    
 
 }
 
@@ -138,13 +157,13 @@ location.reload(true)
 
 }else if (JSON.stringify(pu) == JSON.stringify(v)) {
    
-    tx1.innerHTML = (` Parabéns  <br> ${x.join(" ")}`)
+    tx1.innerHTML = (` Parabéns você ganhou <br> ${x.join(" ")}`)
 
 
 }else {
 
 tx2.innerHTML = (hp.join(""))
-document.getElementById('i1').value = "";
+document.querySelector('#i1').value = ""
 }
 
 
@@ -179,6 +198,8 @@ button.addEventListener('click', () => {
     svg.classList.add('hide')
 
   }
+
+  
 });
 
 

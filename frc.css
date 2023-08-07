@@ -11,19 +11,18 @@ color: rgba(255, 255, 255, 0.651);
 
 }
 #pi1{
-  margin: 0 260px;
+
 
 }
 #pi2{
 
-  margin: 0 138px;
+
 }
 #pi {
-
-
+width: 97%;
   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+  flex-direction: row;
+ justify-content: space-around;
    position: absolute;
 
 }
@@ -36,6 +35,12 @@ color: rgba(255, 255, 255, 0.651);
    bottom: 30%;
 }
 
+#v1 {
+
+  position: absolute;
+  bottom: 40%;
+
+}
 #d1 {
 
   position: absolute;
@@ -44,7 +49,7 @@ color: rgba(255, 255, 255, 0.651);
 }
 
 #d2 {
-    font-size:52px;
+    font-size: 300%;
  
     position: absolute;
     bottom: 50%;
@@ -67,7 +72,7 @@ color: rgba(255, 255, 255, 0.651);
     #d3 {
       letter-spacing: 10%;
       position: absolute;
-      bottom: 90%;
+      bottom: 28%;
      
    
   }
@@ -83,12 +88,12 @@ color: rgba(255, 255, 255, 0.651);
 #b1 {
 
   position: absolute;
-  bottom: 37%;
+  bottom: 35%;
 
 }
 #banana{
   position: absolute;
-  bottom: 25%;
+  bottom: 27%;
 }
 
 /* agua
@@ -102,7 +107,11 @@ svg{
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 body {
-    
+
+  text-align:center;
+
+  background: linear-gradient(to right, #414345, #232526);
+  color:rgb(255, 255, 255);
   margin:0;
 }
 
@@ -121,12 +130,10 @@ p {
 
 .header {
    
-  position:relative;
-  text-align:center;
-  background: -webkit-linear-gradient(to right, #414345, #232526);
-  background: linear-gradient(to right, #414345, #232526);
-  color:rgb(255, 255, 255);
+
 }
+
+
 
 .logo {
   width:50px;
